@@ -20,12 +20,12 @@ public class AopExampleApplication implements CommandLineRunner {
 	public void run(String... strings) throws Exception {
 		System.out.println(employeeService.getEmployee().getName());
 		employeeService.getEmployee().setName("Him");
-		/*try {
+        employeeService.setEmployee(new Employee("Hello"));
+        try {
             employeeService.getEmployee().throwException();
         } catch (Exception e) {
-		    e.printStackTrace();
-        }*/
-        employeeService.setEmployee(new Employee("Hello"));
+		    //e.printStackTrace();
+        }
 	}
 
 	@Bean
