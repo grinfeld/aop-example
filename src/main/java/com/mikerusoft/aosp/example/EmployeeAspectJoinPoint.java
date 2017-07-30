@@ -24,7 +24,7 @@ public class EmployeeAspectJoinPoint {
     }
 
     //Advice arguments, will be applied to bean methods with single String argument
-    // TODO: it throws exception since @Before should be more specific
+    // TODO: it throws exception since expression in @Before should be more specific
 /*    @Before("args(name)")
     public void logStringArguments(String name){
         System.out.println("String argument passed="+name);

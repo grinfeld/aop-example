@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class EmployeeAfterAspect {
-    // TODO: it throws exception since @After should be more specific
+    // TODO: it throws exception since expression in @After should be more specific
 /*    @After("args(name)")
     public void logStringArguments(String name){
         System.out.println("Running After Advice. String argument passed="+name);
