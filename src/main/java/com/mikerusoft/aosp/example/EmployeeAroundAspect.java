@@ -17,7 +17,7 @@ public class EmployeeAroundAspect {
         System.out.println("Before invoking getName() method");
         Object value = null;
         try {
-            value = proceedingJoinPoint.proceed();
+            value = "Changed " + String.valueOf(proceedingJoinPoint.proceed());
         } catch (Throwable e) {
             e.printStackTrace();
         }

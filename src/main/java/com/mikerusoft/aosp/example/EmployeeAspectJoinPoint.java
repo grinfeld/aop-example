@@ -19,7 +19,7 @@ public class EmployeeAspectJoinPoint {
     public void loggingAdvice(JoinPoint joinPoint){
         System.out.println("Before running loggingAdvice on method="+joinPoint.toString());
 
-        System.out.println("Agruments Passed=" + Arrays.toString(joinPoint.getArgs()));
+        System.out.println("Arguments Passed=" + Arrays.toString(joinPoint.getArgs()));
 
     }
 
